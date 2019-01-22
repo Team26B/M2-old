@@ -31,7 +31,14 @@ public class Person1 {
 	 */
 	private String calc(String input) {
 	  //Person 1 put your implementation here
-	  return null;
+        String toReturn = "";
+        int real = 0;
+
+        for (int i = 2; i < input.length() + 3; i++) {
+            real = i % input.length();
+            toReturn = toReturn + input.charAt(real);
+        }
+	    return input;
 	}
 	
 	/**
