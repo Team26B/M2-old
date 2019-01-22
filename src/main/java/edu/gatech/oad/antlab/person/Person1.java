@@ -33,12 +33,11 @@ public class Person1 {
 	  //Person 1 put your implementation here
         String toReturn = "";
         int real = 0;
-
         for (int i = 2; i < input.length() + 3; i++) {
             real = i % input.length();
             toReturn = toReturn + input.charAt(real);
         }
-	    return input;
+	    return toReturn;
 	}
 	
 	/**
