@@ -38,7 +38,7 @@ public class Person1 {
             real = i % input.length();
             toReturn = toReturn + input.charAt(real);
         }
-	    return input;
+	    return toReturn;
 	}
 	
 	/**
