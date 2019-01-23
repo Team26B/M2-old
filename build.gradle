@@ -1,2 +1,36 @@
 // Build file
 
+defaultTasks 'jar'
+
+apply plugin: 'java'
+
+/*
+task compileJava() << {
+
+
+
+}
+
+task compileTest() << {
+
+
+
+}
+
+task javadoc() << {
+
+}
+*/
+
+
+//Define the contents of the jar file
+jar  {
+  manifest {
+     attributes 'Main-Class' : 'edu.gatech.oad.antlab.pkg1.AntLabMain',
+                'Class-Path': 'lib/resources.jar'
+
+    }
+
+      destinationDir = file('.') //Puts the jar file in our current directory
+      archiveName = 'm2.jar' //Names jar file
+}
